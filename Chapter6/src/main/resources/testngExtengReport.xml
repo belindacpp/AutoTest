@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >-->
+<suite name="test extent">
+    <test name="test">
+        <classes>
+            <class name="com.test.extentreportDemo.ExtentDemo1"/>
+                <methods>
+                    <include name="test01"/>
+                    <include name="test02"/>
+                    <include name="logdemo"/>
+                </methods>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter"/>
+    </listeners>
+ </suite>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<!--@BeforeSuite和@AfterSuite在一个suite标签里面只运行一次，@BeforeTest和@AfterTest在一个test标签运行一次-->
+<suite name="suitTest">
+    <test name="login">
+        <classes>
+            <class name="com.course.testng.suite.SuitConfig"/>
+            <class name="com.course.testng.suite.Logintest"/>
+            <!--<class name="com.course.testng.suite.PayPrac"/>-->
+        </classes>
+
+    </test>
+    <test name="pay">
+        <classes>
+            <class name="com.course.testng.suite.SuitConfig"/>
+            <class name="com.course.testng.suite.PayPrac"/>
+        </classes>
+    </test>
+</suite>
